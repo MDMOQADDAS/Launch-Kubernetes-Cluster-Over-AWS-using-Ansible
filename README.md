@@ -1,17 +1,17 @@
 # Complete Ansible Roles that Configure your Kubernetes cluster.
 
 # Compulsory Steps
-#### step1: Make Some Important file executable <br>
+### step1: Make Some Important file executable <br>
 chmod +x ec2.py <br>
 chmod +x requitements.sh <br>
 chmod +x run.sh
 <br><br>
 
-#### step2: Download private key at same location and run below command
+### step2: Download private key at same location and run below command
 <br>
 chmod 400 key_name.pem
 <br><br>
-# step3: Get access key and secrete key from aws IAM
+### step3: Get access key and secrete key from aws IAM
 <br>
 export AWS_ACCESS_KEY_ID='put_here_access_key'<br>
 export AWS_SECRET_ACCESS_KEY='put_here_secret_key'
