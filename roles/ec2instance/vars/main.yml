@@ -1,0 +1,14 @@
+---
+# vars file for moqaddas.ec2_create_ins
+
+
+key_name: call2
+security_group: sg-01f56eabba06524f0
+instance_type: t2.micro
+image_id: ami-00bf4ae5a7909786c
+master_count: 1
+worker_count: 1
+region: ap-south-1
+vpc_subnet_id: subnet-5847a533
+tag_master: {"Name": "Master Node"}
+tag_worker: {"Name": "Worker Node"}

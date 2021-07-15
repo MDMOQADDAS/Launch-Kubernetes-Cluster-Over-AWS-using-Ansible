@@ -1,0 +1,22 @@
+- name: "Launching the Master over AWS  ec2 instance"
+  ec2:
+      key_name: "{{ key_name  }}"
+      instance_type: "{{ instance_type }}"
+      image: "{{ image_id }}"
+      count: "{{ master_count }}"
+      assign_public_ip: yes
+      region: "{{region}}"
+      vpc_subnet_id: "{{ vpc_subnet_id }}"
+      instance_tags: "{{ tag_master }}"
+
+- name: "Launching the Worker Node over AWS  ec2 instance"
+  ec2:
+      key_name: "{{ key_name  }}"
+      instance_type: "{{ instance_type }}"
+      image: "{{ image_id }}"
+      count: "{{ worker_count }}"
+      assign_public_ip: yes
+      region: "{{region}}"
+      vpc_subnet_id: "{{ vpc_subnet_id }}"
+      instance_tags: "{{ tag_worker }}"
+     

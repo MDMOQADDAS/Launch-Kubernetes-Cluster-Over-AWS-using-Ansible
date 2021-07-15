@@ -1,0 +1,4 @@
+---
+# tasks file for moqaddas.k8s_worker
+- name: "Including the task for configure the worker node"
+  include_tasks: "worker.yml"

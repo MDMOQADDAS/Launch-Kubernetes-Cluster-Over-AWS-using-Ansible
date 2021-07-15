@@ -1,0 +1,4 @@
+---
+# tasks file for moqaddas.k8s_master
+- name: "Including the tasks for configuration of master node"
+  include_tasks: "k8s_master.yml"

@@ -1,0 +1,4 @@
+---
+# tasks file for moqaddas.ec2_create_ins
+- name: "Including the task to lauch Instances"
+  include_tasks: "launch_instances.yml"
