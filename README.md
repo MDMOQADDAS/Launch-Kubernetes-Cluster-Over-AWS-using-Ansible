@@ -1,3 +1,4 @@
+#=======================================================
 #step1: download private key file and put at same location
 
 Note-: AFter copy run the command "sudo chmod 400 key_name.pem"
