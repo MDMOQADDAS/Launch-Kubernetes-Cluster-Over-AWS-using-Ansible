@@ -1,5 +1,3 @@
 - hosts: tag_Name_Worker_Node
-  vars_files:
-      - worker_join_command.yml
   roles:
     - k8sworker

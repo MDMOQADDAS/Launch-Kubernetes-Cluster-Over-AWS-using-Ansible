@@ -1,0 +1,23 @@
+- hosts: tag_Name_Master_Node
+  tasks:
+  - name: "Launching the Wordpress Pod"
+    shell: "kubectl apply -f wordpress.yml"
+    ignore_errors: yes
+  - name: "Launching the mysql pod"
+    shell: "kubectl apply -f mysql.yml"
+    ignore_errors: yes
+  - name: "Exposing the wordpress at port 80"
+    shell: "kubectl apply -f svc.yml"
+    ignore_errors: yes
+  - name: "port number for wordpress pod"
+    shell: "kubectl get svc"
+    ignore_errors: yes
+    register: port
+  - debug:
+          var: port.stdout_lines[2]
+  - name: "Fetching the local ip of mysql pod"
+    shell: "kubectl describe pod mysql"
+    register: mysql_ip
+  - name: "IP of Mysql Pod use it in wordpress"
+    debug:
+            var: mysql_ip.stdout_lines[8]
