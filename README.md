@@ -28,20 +28,12 @@ vim roles/ec2instance/vars/main.yml<br>
 ![image](https://user-images.githubusercontent.com/69861558/125833879-4008bd3a-3b2c-4e25-91ce-4bec4fb34a19.png)
 
 <br><br>
-#step6: Open ansible.cfg file and change key name
-
-#step7: Open the file "roles/ec2instance/vars/main.yml" and change the value
-
-key_name: newkey
-security_group: sg-06ff5e49cf579aead
-instance_type: t2.micro
-image_id: ami-011c99152163a87ae
-master_count: 1
-worker_count: 1
-region: ap-south-1
-vpc_subnet_id: subnet-fde49eb1
-tag_master: {"Name": "Master Node"}
-tag_worker: {"Name": "Worker Node"}
 
 
-step8: run the play 
+### step6: Open ansible.cfg file and change key name
+<br>
+vim ansible.cfg<br><br>
+
+### step7: Run final script to create entire setup
+<br>
+./run.sh
