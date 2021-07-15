@@ -18,15 +18,16 @@ export AWS_ACCESS_KEY_ID='put_here_access_key'<br>
 export AWS_SECRET_ACCESS_KEY='put_here_secret_key'
 <br><br>
 
-#step4: RUN requitements.sh file "./requitements.sh"
+### step4: RUN requitements.sh file <br>
+./requitements.sh
 
-#step5: Run Command
-export AWS_ACCESS_KEY_ID='AK123'
-export AWS_SECRET_ACCESS_KEY='abc123'
+<br><br>
 
-Note-: Change the access key and secrete key
+### step5: Change Importand Variables<br>
+vim roles/ec2instance/vars/main.yml<br>
+![image](https://user-images.githubusercontent.com/69861558/125833879-4008bd3a-3b2c-4e25-91ce-4bec4fb34a19.png)
 
-
+<br><br>
 #step6: Open ansible.cfg file and change key name
 
 #step7: Open the file "roles/ec2instance/vars/main.yml" and change the value
