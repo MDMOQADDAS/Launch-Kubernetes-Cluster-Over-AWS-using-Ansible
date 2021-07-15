@@ -11,6 +11,7 @@ chmod +x run.sh
 <br>
 chmod 400 key_name.pem
 <br><br>
+
 ### step3: Get access key and secrete key from aws IAM
 <br>
 export AWS_ACCESS_KEY_ID='put_here_access_key'<br>
