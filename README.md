@@ -2,7 +2,7 @@
 
 # Compulsory Steps
 #### step1: Make Some Important file executable <br>
-**chmod +x ec2.py** <br>
+chmod +x ec2.py <br>
 chmod +x requitements.sh <br>
 chmod +x run.sh
 <br><br>
@@ -10,13 +10,12 @@ chmod +x run.sh
 #### step2: Download private key at same location and run below command
 <br>
 chmod 400 key_name.pem
-
-#step2: Get accesskey and secrete key from aws IAM
-
-#step3: RUN Commands
-
-sudo chmod +x requitements.sh
-sudo chmod +x ec2.py
+<br><br>
+# step3: Get access key and secrete key from aws IAM
+<br>
+export AWS_ACCESS_KEY_ID='put_here_access_key'<br>
+export AWS_SECRET_ACCESS_KEY='put_here_secret_key'
+<br><br>
 
 #step4: RUN requitements.sh file "./requitements.sh"
 
