@@ -1,4 +1,5 @@
 # Complete Ansible Roles that Configure your Kubernetes cluster.
+![image](https://user-images.githubusercontent.com/69861558/125890025-12e9afa2-205d-442d-b99a-31a06a3da39a.png)
 
 # Compulsory Steps
 ### step1: Make Some Important file executable <br>
