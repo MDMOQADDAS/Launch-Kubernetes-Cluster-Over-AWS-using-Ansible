@@ -1,13 +1,22 @@
 - hosts: tag_Name_Master_Node
   tasks:
+  - copy:
+          src: "wordpress.yml"
+          dest: "/root/wordpress.yml"
   - name: "Launching the Wordpress Pod"
-    shell: "kubectl apply -f wordpress.yml"
+    shell: "kubectl apply -f /root/wordpress.yml"
     ignore_errors: yes
+  - copy:
+          src: "mysql.yml"
+          dest: "/root/mysql.yml"
   - name: "Launching the mysql pod"
-    shell: "kubectl apply -f mysql.yml"
+    shell: "kubectl apply -f /root/mysql.yml"
     ignore_errors: yes
+  - copy:
+          src: "svc.yml"
+          dest: "/root/svc.yml"
   - name: "Exposing the wordpress at port 80"
-    shell: "kubectl apply -f svc.yml"
+    shell: "kubectl apply -f /root/svc.yml"
     ignore_errors: yes
   - name: "port number for wordpress pod"
     shell: "kubectl get svc"
